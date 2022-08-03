@@ -1,0 +1,95 @@
+.bg_video{
+	position: fixed; 
+  top: -10%;
+	bottom: 0;
+  min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 768px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  max-width: 50%;
+  text-align: center;
+  padding: 3.5rem 0 0 1rem;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.personal-avatar {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  width: 80%;
+}
+
+.icons {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+.link-tree {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 black;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 35px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.link-tree:hover {
+  transform: scale(1.2);
+}
+
+.my-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: -2rem;
+}
+
+
+.my-link--icon {
+  padding-left: 1rem;
+  justify-self: self-start;
+}
